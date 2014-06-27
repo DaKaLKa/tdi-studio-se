@@ -574,9 +574,9 @@ public class StatsAndLogsManager {
                     process.getElementParameter(EParameterName.SCHEMA_JOB.getName()).getValue());
         }
         // schema for DB2
-        if (connectionNode.getElementParameter(EParameterName.SCHEMA_DB_DB2.getName()) != null) {
-            connectionNode.getElementParameter(EParameterName.SCHEMA_DB_DB2.getName()).setValue(
-                    process.getElementParameter(EParameterName.SCHEMA_JOB.getName()).getValue());
+        if (connectionNode.getElementParameter(EParameterName.SCHEMA_DB_DB2.getDisplayName()) != null) {
+            connectionNode.getElementParameter(EParameterName.SCHEMA_DB_DB2.getDisplayName()).setValue(
+                    process.getElementParameter(EParameterName.SCHEMA_DB.getName()).getValue());
         }
         // schema for MSSQL
         if (connectionNode.getElementParameter(EParameterName.SCHEMA_DB_MSSQL.getName()) != null) {
